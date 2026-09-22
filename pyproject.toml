@@ -1,0 +1,41 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "tiny-bounty-queue"
+version = "0.1.0"
+description = "Zero-dependency bounty issue scoring, queueing, and dispatch for autonomous coding agents."
+readme = "README.md"
+license = {text = "MIT"}
+authors = [{name = "Hussain Al-Saibai", email = "hussain.alsaibai@gmail.com"}]
+keywords = ["bounty", "agent", "open-source", "triage", "queue", "tiny"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Software Development :: Libraries",
+    "Topic :: Software Development :: Quality Assurance",
+]
+requires-python = ">=3.8"
+dependencies = []
+
+[project.urls]
+Homepage = "https://github.com/hussain-alsaibai/tiny-bounty-queue"
+Repository = "https://github.com/hussain-alsaibai/tiny-bounty-queue"
+Issues = "https://github.com/hussain-alsaibai/tiny-bounty-queue/issues"
+
+[tool.setuptools]
+py-modules = ["tiny_bounty_queue"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = ["test_*.py"]
