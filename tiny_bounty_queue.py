@@ -78,7 +78,7 @@ import re
 import time
 from collections.abc import Callable, Iterable
 from dataclasses import dataclass, field, asdict
-from typing import Any
+from typing import Any, Dict
 
 
 # ---------------------------------------------------------------------------
@@ -194,7 +194,7 @@ class Filter:
 # Scorer
 # ---------------------------------------------------------------------------
 
-Capability = dict[str, float]  # skill -> 0..1
+Capability = Dict[str, float]  # skill -> 0..1 (typing.Dict: PEP 585 generics are 3.9+)
 
 
 class Scorer:
